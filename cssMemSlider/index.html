@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,48 +8,46 @@
     <link rel="stylesheet" href="style.css">
     <title>Mem Slider</title>
 </head>
+
 <body>
     <div class="wrapper">
         <div class="slider">
+            <input type="radio" name="slider-button" id="slider-button-01">
+            <input type="radio" name="slider-button" id="slider-button-02">
+            <input type="radio" name="slider-button" id="slider-button-03">
+            <input type="radio" name="slider-button" id="slider-button-04">
             <div class="slider__images">
                 <div id="mem_1" class="slider__image">
-                    <img src="./assets/img/mem1.jpg" alt="mem">
                 </div>
                 <div id="mem_2" class="slider__image">
-                    <img src="./assets/img/mem2.jpg" alt="mem">
                 </div>
                 <div id="mem_3" class="slider__image">
-                    <img src="./assets/img/mem3.jpg" alt="mem">
                 </div>
                 <div id="mem_4" class="slider__image">
-                    <img src="./assets/img/mem4.jpg" alt="mem">
                 </div>
             </div>
-            <div class="slider__subtitle">
-                <span>Subtitle 1</span>
-                <span>Subtitle 2</span>
-                <span>Subtitle 3</span>
-                <span>Subtitle 4</span>
+            <div class="slider__subtitles">
+                <span class="slider__subtitle">Subtitle 1</span>
+                <span class="slider__subtitle">Subtitle 2</span>
+                <span class="slider__subtitle">Subtitle 3</span>
+                <span class="slider__subtitle">Subtitle 4</span>
             </div>
-            <ul class="slider__navigation navigation">
-                <li class="navigation__button">
-                    <label for="nav_link_1"></label>
-                    <a id="nav_link_1" href="#mem_1" class="navigation__link"></a>
-                </li>
-                <li class="navigation__button">
-                    <label for="nav_link_2"></label>
-                    <a id="nav_link_2" href="#mem_2" class="navigation__link"></a>
-                </li>
-                <li class="navigation__button">
-                    <label for="nav_link_3"></label>
-                    <a id="nav_link_3" href="#mem_3" class="navigation__link"></a>
-                </li>
-                <li class="navigation__button">
-                    <label for="nav_link_4"></label>
-                    <a id="nav_link_4" href="#mem_4" class="navigation__link"></a>
-                </li>
-            </ul>
+            <div class="slider__navigation navigation">
+                <label class="navigation__button" for="slider-button-01">
+                    <div></div>
+                </label>
+                <label class="navigation__button" for="slider-button-02">
+                    <div></div>
+                </label>
+                <label class="navigation__button" for="slider-button-03">
+                    <div></div>
+                </label>
+                <label class="navigation__button" for="slider-button-04">
+                    <div></div>
+                </label>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
