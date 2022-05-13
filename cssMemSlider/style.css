@@ -41,7 +41,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	width: 60vw;
 }
 .content {
-	padding: 5vh 10vw;
+	padding: 5vh 5vw;
 	background-color: #69abec;
 }
 .slider {
@@ -60,6 +60,18 @@ input[type=radio] {
 }
 #slider-button-04:checked ~ .slider__images .slider__image:nth-of-type(1)  {
 	margin-left: -90vw;
+}
+#slider-button-01:checked ~ .slider__subtitles .slider__subtitle:nth-of-type(1) {
+	margin-left: 0;
+}
+#slider-button-02:checked ~ .slider__subtitles .slider__subtitle:nth-of-type(1) {
+	margin-left: -25vw;
+}
+#slider-button-03:checked ~ .slider__subtitles .slider__subtitle:nth-of-type(1) {
+	margin-left: -50vw;
+}
+#slider-button-04:checked ~ .slider__subtitles .slider__subtitle:nth-of-type(1) {
+	margin-left: -75vw;
 }
 #slider-button-01:checked ~ .navigation .navigation__button:nth-of-type(1) div {
 	border: 0.2vw solid #1f4061;
@@ -100,8 +112,16 @@ input[type=radio] {
 	background: url('./assets/img/mem4.jpg') center/contain no-repeat;
 }
 .slider__subtitles {
+	display: flex;
+	width: 25vw;
+	overflow: hidden;
 }
 .slider__subtitle {
+	flex: 0 0 100%;
+	display: block;
+	max-width: 25vw;
+	font-size: 2.5rem;
+	text-align: left;
 }
 .slider__navigation {
 }
