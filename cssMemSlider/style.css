@@ -37,7 +37,7 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /* -------- ----- --------*/
 :root {
-	--color-dark: #000000;
+	--color-light: #cfd5dc;
 	--color-primary: #69abec;
 	--color-secondary: #1f4061;
 }
@@ -148,23 +148,23 @@ input[type=radio] {
 	}
 }
 #slider-button-01:checked ~ .navigation .navigation__button:nth-of-type(1) div {
-	border: 0.2vw solid #1f4061;
-	background-color: #69abec;
+	border: 0.2vw solid var(--color-secondary);
+	background-color: var(--color-primary);
 	transition: 0.3s;
 }
 #slider-button-02:checked ~ .navigation .navigation__button:nth-of-type(2) div {
-	border: 0.2vw solid #1f4061;
-	background-color: #69abec;
+	border: 0.2vw solid var(--color-secondary);
+	background-color: var(--color-primary);
 	transition: 0.3s;
 }
 #slider-button-03:checked ~ .navigation .navigation__button:nth-of-type(3) div {
-	border: 0.2vw solid #1f4061;
-	background-color: #69abec;
+	border: 0.2vw solid var(--color-secondary);
+	background-color: var(--color-primary);
 	transition: 0.3s;
 }
 #slider-button-04:checked ~ .navigation .navigation__button:nth-of-type(4) div {
-	border: 0.2vw solid #1f4061;
-	background-color: #69abec;
+	border: 0.2vw solid var(--color-secondary);
+	background-color: var(--color-primary);
 	transition: 0.3s;
 }
 .slider__images {
@@ -216,8 +216,6 @@ input[type=radio] {
 		font-size: 3rem;
 	}
 }
-.slider__navigation {
-}
 .navigation {
 	width: 20vh;
 	display: flex;
@@ -234,10 +232,10 @@ input[type=radio] {
 	width: 50%;
 	height: 50%;
 	border-radius: 50%;
-	background-color: #1f4061;
+	background-color: var(--color-secondary);
 	transition: all 1.5s;
 }
 .navigation__button:hover div {
-	background-color: #cfd5dc;
+	background-color: var(--color-light);
 	transition: all 0.3s;
 }
